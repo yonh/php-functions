@@ -7,9 +7,7 @@
             "email": "azssjli@163.com"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
-		"php": "^5.4 || ^7.0"
 	},
 	 "autoload": {
 		"files": ["functions.php"]
