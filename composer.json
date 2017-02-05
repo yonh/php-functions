@@ -1,15 +1,19 @@
 {
-    "name": "yonh/php-functions",
-	"type": "library",
-    "authors": [
-        {
-            "name": "yonh",
-            "email": "azssjli@163.com"
-        }
-    ],
-    "require": {
-	},
-	 "autoload": {
-		"files": ["functions.php"]
-	}
+  "name": "yonh/php-functions",
+  "type": "library",
+  "authors": [
+    {
+      "name": "yonh",
+      "email": "azssjli@163.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.3.0"
+  },
+  "autoload": {
+    "files": [
+      "functions.php"
+    ]
+  }
 }
