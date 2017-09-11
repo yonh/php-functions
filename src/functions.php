@@ -96,3 +96,46 @@ function checkArrayElementRepeat($arr) {
 	}
 }
 
+/**
+ * 返回字符串包含的特定字符的个数
+ * 
+ * @param $s
+ * @return int
+ */
+function stringContainsCharsCount($string, $chars)
+{
+    $count = 0;
+
+    if (!is_string($string)) return $count;
+
+    for ($i=0;$i<strlen($string); $i++) {
+        $l = substr($string, $i, 1);
+        if (strpos($chars, $l)!==false) $count++;
+    }
+
+    return $count;
+}
+
+/**
+ * 返回字符串包含的字母个数
+ * 
+ * @param $s
+ * @return int
+ */
+function stringContainsNumbersCount($s) {
+    return stringContainsCharsCount($s, "0123456789");
+}
+
+/**
+ * 返回字符串包含的字母个数
+ *
+ * @param $s
+ * @return int
+ */
+function stringContainsLetterCount($s)
+{
+    $chars = "abcdefghijklmnopqrstuvwxyz";
+    $chars = $chars . strtoupper($chars);
+
+    return stringContainsCharsCount($s, $chars);
+}
